@@ -1,7 +1,12 @@
+html{
+    width: 100%;
+    /* position: flex;
+    display: table; */
+}
 .header{
     padding-top: 80px;
     background-color: black;
-    background-size: cover;
+    /* background: linear-gradient(to top, rgba(243, 196, 196, 0), black, black, black); */
 }
 #title{
     color: #00BA51;
