@@ -10,14 +10,14 @@ $(document).ready(function(){
     console.log(currentScroll);
     let videoBox = document.getElementById("videobox").getBoundingClientRect().top;
     console.log(videoBox);
-    let Vid1 = document.getElementById("ActivityCenter");
-    Vid1.pause();
-    let Vid2 = document.getElementById("ECommerce");
-    Vid2.pause();
-    let Vid3 = document.getElementById("FunRooms");
-    Vid3.pause();
-    let Vid4 = document.getElementById("Wanderlust");
-    Vid4.pause();
+    // let Vid1 = document.getElementById("ActivityCenter");
+    // Vid1.pause();
+    // let Vid2 = document.getElementById("ECommerce");
+    // Vid2.pause();
+    // let Vid3 = document.getElementById("FunRooms");
+    // Vid3.pause();
+    // let Vid4 = document.getElementById("Wanderlust");
+    // Vid4.pause();
     
 
     $(window).scroll(function(s){
@@ -29,17 +29,17 @@ $(document).ready(function(){
         console.log(currentHeight);
         console.log("SCreen TOP",screenTop);
         //Checks if video box has been entered by window. If window screen half way in starts all videos. If user leaves videos pause.
-        if(currentHeight+(screenHeight/2) >= videoBox+startScroll){
-            Vid1.play();
-            Vid2.play();
-            Vid3.play();
-            Vid4.play();
-        } else{
-            Vid1.pause();
-            Vid2.pause();
-            Vid3.pause();
-            Vid4.pause();
-        }
+        // if(currentHeight+(screenHeight/2) >= videoBox+startScroll){
+        //     Vid1.play();
+        //     Vid2.play();
+        //     Vid3.play();
+        //     Vid4.play();
+        // } else{
+        //     Vid1.pause();
+        //     Vid2.pause();
+        //     Vid3.pause();
+        //     Vid4.pause();
+        // }
         if(screenTop<= currentScroll){
             $("#NavBar").show();
             currentScroll = screenTop;
