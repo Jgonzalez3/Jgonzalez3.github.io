@@ -235,7 +235,7 @@ footer{
         list-style: none;
         padding: 10px;
     }
-    #hollywood, #huskies, #aboutMeEducation, #aboutMeEducation-xs{
+    #hollywood, #huskies, #aboutMeEducation, #aboutMeEducation-xs, #huskies-xs, #spaceNeedle-xs, #codeBlock-xs{
         display: none;
     }
     #huskies-md{
