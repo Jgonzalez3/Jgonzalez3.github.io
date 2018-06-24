@@ -1,7 +1,5 @@
 html{
     width: 100%;
-    /* position: flex;
-    display: table; */
 }
 .header{
     padding-top: 80px;
@@ -10,15 +8,12 @@ html{
 }
 #title{
     color: #00BA51;
-    /* text-shadow: -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000; */
+    padding: 10px;
 }
 .icon{
     width: 50px; 
     height: 50px;
-    margin: 10px;
+    margin: 7px;
     -webkit-transition: 0.6s ease-out;
     -moz-transition:  0.6s ease-out;
     transition:  0.6s ease-out;
@@ -37,10 +32,12 @@ html{
     margin: 0 auto;
     padding: 20px;
     border: solid #00BA51 7px;
-    /* outline: solid purple 4px; */
     width: 80%;
     background-color: white;
     border-radius: 15px 15px;
+}
+.contact-box:hover, .contact-box:active{
+    box-shadow: rgba(0, 186, 81, 0.548) 0px 0px 10px 10px;
 }
 .contact{
     font-weight: bold;
@@ -53,6 +50,8 @@ html{
     display: inline-block;
     vertical-align: top;
     height: 370px;
+    overflow: hidden;
+    
 }
 #aboutMeHobbies{
     background-color: rgb(255, 255, 241);
@@ -64,45 +63,60 @@ html{
     margin-left: -5px;
     overflow: hidden;
 }
-#aboutMeHobbies:hover, #aboutMeHobbies:active{
-    overflow-y: scroll;
-}
 #aboutme p{
     padding: 10px 30px;
     display: inline-block;
     vertical-align: top;
+    
 }
 #spaceNeedle, #codeBlock{
     width: 56.35%;
     height: 370px;
     display: inline-block;
     vertical-align: top;
+    
 }
 #money{
     width: 35%;
     height: 370px;
     display: inline-block;
     vertical-align: top;
+
 }
 #hollywood, #huskies{
     width: 35%;
     height: 370px;
     display: inline-block;
     vertical-align: top;
+
 }
 #aboutMeEducation{
-    /* background-color: goldenrod; */
     width: 29.2%;
     height: 370px;
     display: inline-block;
     vertical-align: top;
-    
-}
-#aboutMeEducation:hover, #aboutMeEducation:active{
-    overflow-y: scroll;
+    overflow: hidden;
+
 }
 #aboutMeTitle, #aboutMePostCollege,{
     background-color: dodgerblue;
+}
+.aboutmetxt{
+    margin-left: 15px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .2), 0 8px 24px 0 rgba(0,0,0,.19);
+    width: 95%;
+    border-radius: 15px 15px;
+    background: linear-gradient(to top, rgba(9, 255, 0, 0), rgba(4, 120, 0, 0.418));
+    transition: 200ms ease-in-out;
+    
+}
+.aboutmetxt:hover, .aboutmetxt:active{
+    background-color: #00BA51;
+    z-index: 5;
+    font-weight: bold;
+    position: absolute;
+    margin: 0 auto;
+    width: 60%;
 }
 #videobox{
     padding: 25px;
@@ -113,7 +127,8 @@ html{
     border-radius: 25px 25px;
     padding: 20px 0;
     display: inline-block;
-    /* height: 500px; */
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .2), 0 8px 24px 0 rgba(0,0,0,.19);  
+    margin-bottom: 15px;
 }
 .video{
     display: block;
@@ -127,6 +142,9 @@ html{
     display: inline-block;
     width: 27%;
     vertical-align: top;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .2), 0 8px 24px 0 rgba(0,0,0,.19);
+    border-radius: 25px 25px;
+    margin: 0 5px 15px 5px;
 }
 hr{
     border-top-width: 3px;
@@ -154,8 +172,17 @@ iframe{
     width: 90%;
     height: 100%;
 }
+#techskills{
+    background-color: #00BA51;
+}
+.techbox{
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .25), 0 10px 26px 0 rgba(0,0,0,.24);
+    margin-bottom: 15px;
+    background-color: white;
+    
+}
 footer{
-    height: 350px;
+    height: 370px;
     padding: 20px;
     background-color: black;
     background-size: cover;
@@ -163,8 +190,87 @@ footer{
 #footercontact{
     background-color: white;
     list-style: none;
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
     border-radius: 20px 20px;
     font-weight: bold;
+}
+@media only screen and (max-width: 1150px){
+/* less than 1100 wiill be applied */
+    .vid-lg{
+        display: none;
+    }
+    .projectcard{
+        margin-bottom: 20px;
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, .23), 0 10px 24px 0 rgba(0,0,0,.21);
+        border-radius: 25px 25px;
+    }
+    .projectvideo{
+        width: 100%;
+        background-color: black;
+        border-radius: 25px 25px 0 0;
+        padding: 20px 0;
+        display: block; 
+        margin: 0 auto;
+        box-shadow: none;
+    }
+    .projectinfo{
+        padding: 15px;
+        text-align: center;
+        display: block;
+        width: 100%;
+        border-radius: 0 0 25px 25px;
+        box-shadow: none;
+        margin: 0 auto;
+    }
+    .video{
+        height: 500px;
+    }
+    ul{
+        list-style: none;
+    }
+    #hollywood, #huskies, #aboutMeEducation{
+        display: none;
+    }
+    #huskies-md{
+        height: 370px;
+        display: inline-block;
+        vertical-align: top;
+        width: 55%;
+    }
+    #aboutMeEducation-md{
+        width: 44%;
+        height: 370px;
+        display: inline-block;
+        vertical-align: top;
+        overflow: hidden;
+    }
+    .aboutmetxt-md{
+        margin-left: 10px;
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .2), 0 8px 24px 0 rgba(0,0,0,.19);
+        width: 95%;
+        border-radius: 15px 15px;
+        background: linear-gradient(to top, rgba(9, 255, 0, 0), rgba(4, 120, 0, 0.418));
+        transition: 200ms ease-in-out;
+        
+    }
+    .aboutmetxt-md:hover, .aboutmetxt-md:active{
+        background-color: #00BA51;
+        z-index: 5;
+        font-weight: bold;
+        position: absolute;
+        left: 20px;
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+/* greater than will be applied below */
+@media only screen and (min-width: 1151px){
+    .vid-md, #aboutMeEducation-md, #huskies-md{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px){
+    /* less than 1100 wiill be applied */
+    
 }

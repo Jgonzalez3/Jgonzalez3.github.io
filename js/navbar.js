@@ -61,5 +61,4 @@ function FindProjects(){
     window.scrollTo(0, ProjectsPosition);
     console.log(projectsTitlePos);
     console.log(ProjectsPosition);
-    // console.log(window.f);
 }
