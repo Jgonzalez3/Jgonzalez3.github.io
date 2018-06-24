@@ -194,6 +194,7 @@ footer{
     margin: 0 auto;
     border-radius: 20px 20px;
     font-weight: bold;
+    padding: 5px;
 }
 @media only screen and (max-width: 1150px){
 /* less than 1100 wiill be applied */
@@ -272,5 +273,5 @@ footer{
 }
 @media only screen and (max-width: 600px){
     /* less than 1100 wiill be applied */
-    
+
 }
