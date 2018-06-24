@@ -18,7 +18,7 @@ html{
     -moz-transition:  0.6s ease-out;
     transition:  0.6s ease-out;
 }
-.icon:hover, .icon:active{
+.icon:hover, .icon:active, .techicons:hover, .techicons:active{
     -webkit-transform: rotateZ(720deg);
     -moz-transform: rotateZ(720deg);
     transform: rotateZ(720deg);
@@ -27,6 +27,12 @@ html{
     width: 100px; 
     height: 100px;
     margin: 10px;
+    border-radius: 15px 15px;
+    position: relative;
+    overflow: visible;
+    -webkit-transition: 0.6s ease-out;
+    -moz-transition:  0.6s ease-out;
+    transition:  0.6s ease-out;
 }
 .contact-box{
     margin: 0 auto;
@@ -51,6 +57,7 @@ html{
     vertical-align: top;
     height: 370px;
     overflow: hidden;
+    padding-right: 5px;
     
 }
 #aboutMeHobbies{
@@ -76,13 +83,13 @@ html{
     vertical-align: top;
     
 }
-#money{
+/* #money{
     width: 35%;
     height: 370px;
     display: inline-block;
     vertical-align: top;
 
-}
+} */
 #hollywood, #huskies{
     width: 35%;
     height: 370px;
@@ -96,6 +103,7 @@ html{
     display: inline-block;
     vertical-align: top;
     overflow: hidden;
+    padding-right: 10px;
 
 }
 #aboutMeTitle, #aboutMePostCollege,{
@@ -180,7 +188,7 @@ iframe{
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .25), 0 10px 26px 0 rgba(0,0,0,.24);
     margin-bottom: 15px;
     background-color: white;
-    
+    padding-bottom: 5px;
 }
 hr{
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .25), 0 10px 26px 0 rgba(0,0,0,.24);
@@ -202,6 +210,9 @@ footer{
 }
 @media only screen and (max-width: 1150px){
 /* less than 1100 wiill be applied */
+    #aboutMeTitle, #aboutMePostCollege{
+        padding-right: 10px;
+    }
     .vid-lg{
         display: none;
     }
@@ -265,9 +276,9 @@ footer{
         z-index: 5;
         font-weight: bold;
         position: absolute;
-        left: 20px;
+        left: 30%;
         margin: 0 auto;
-        width: 80%;
+        width: 60%;
     }
     #footercontact{
         width: 86%;
@@ -321,6 +332,17 @@ footer{
         /* font-weight: initial; */
         position: absolute;
         margin: initial;
-        width: 90%;
+        width: 85%;
+    }
+    .techbox{
+        margin: 0 auto 15px auto;
+    }
+    .video{
+        height: 400px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .video{
+        height: 300px;
     }
 }
