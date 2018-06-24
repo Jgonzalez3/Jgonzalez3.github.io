@@ -156,6 +156,7 @@ li:hover{
 }
 ::-webkit-scrollbar{
     width: 10px;
+    background-color: transparent;
 }
 ::-webkit-scrollbar-thumb{
     background: dodgerblue;
@@ -181,6 +182,9 @@ iframe{
     background-color: white;
     
 }
+hr{
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .25), 0 10px 26px 0 rgba(0,0,0,.24);
+}
 footer{
     height: 370px;
     padding: 20px;
@@ -190,7 +194,7 @@ footer{
 #footercontact{
     background-color: white;
     list-style: none;
-    width: 75%;
+    width: 70%;
     margin: 0 auto;
     border-radius: 20px 20px;
     font-weight: bold;
@@ -229,8 +233,9 @@ footer{
     }
     ul{
         list-style: none;
+        padding: 10px;
     }
-    #hollywood, #huskies, #aboutMeEducation{
+    #hollywood, #huskies, #aboutMeEducation, #aboutMeEducation-xs{
         display: none;
     }
     #huskies-md{
@@ -264,14 +269,58 @@ footer{
         margin: 0 auto;
         width: 80%;
     }
+    #footercontact{
+        width: 86%;
+    }
 }
 /* greater than will be applied below */
 @media only screen and (min-width: 1151px){
-    .vid-md, #aboutMeEducation-md, #huskies-md{
+    .vid-md, #aboutMeEducation-md, #huskies-md, #aboutMeEducation-xs{
         display: none;
     }
 }
 @media only screen and (max-width: 600px){
-    /* less than 1100 wiill be applied */
-
+    #aboutme h3{
+        position: relative;
+        z-index: +2;
+        color: white;
+    }
+    #aboutMeEducation-md, #huskies-md, #spaceNeedle, #codeBlock{
+        display: none;
+    }
+    #aboutMeEducation-xs{
+        width: 100%;
+        height: 370px;
+        display: inline-block;
+        vertical-align: top;
+        overflow: hidden;
+        /* position: absolute; */
+        background: transparent;
+        margin-bottom: -.5px;
+    }
+    #huskies-xs, #spaceNeedle-xs, #codeBlock-xs{
+        height: 370px;
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        position: absolute;
+        opacity: .8;
+    }
+    #aboutMeTitle, #aboutMePostCollege{
+        margin-bottom: -.5px;
+        width: 100%;
+        background: transparent;
+    }
+    #spaceNeedle-xs:hover, #huskies-xs:hover, #codeBlock-xs:hover{
+        opacity: 1;
+        z-index: -1;
+    }
+    .aboutmetxt:hover, .aboutmetxt:active, .aboutmetxt-md:hover, .aboutmetxt-md:active{
+        /* background-color: initial; */
+        /* z-index: initial; */
+        /* font-weight: initial; */
+        position: absolute;
+        margin: initial;
+        width: 90%;
+    }
 }
