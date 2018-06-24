@@ -275,7 +275,7 @@ footer{
 }
 /* greater than will be applied below */
 @media only screen and (min-width: 1151px){
-    .vid-md, #aboutMeEducation-md, #huskies-md, #aboutMeEducation-xs{
+    .vid-md, #aboutMeEducation-md, #huskies-md, #aboutMeEducation-xs, #huskies-xs, #spaceNeedle-xs, #codeBlock-xs{
         display: none;
     }
 }
