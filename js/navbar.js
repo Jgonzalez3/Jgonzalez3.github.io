@@ -21,13 +21,13 @@ $(document).ready(function(){
     
 
     $(window).scroll(function(s){
-        console.log(s);
-        console.log("Window",window);
+        // console.log(s);
+        // console.log("Window",window);
         let currentHeight = s.originalEvent.path[1].scrollY;
         let screenTop = s.originalEvent.path[1].visualViewport.pageTop;
         scrollChange = currentHeight;
-        console.log(currentHeight);
-        console.log("SCreen TOP",screenTop);
+        // console.log(currentHeight);
+        // console.log("SCreen TOP",screenTop);
         //Checks if video box has been entered by window. If window screen half way in starts all videos. If user leaves videos pause.
         // if(currentHeight+(screenHeight/2) >= videoBox+startScroll){
         //     Vid1.play();
@@ -59,6 +59,6 @@ function FindProjects(){
     let projectsTitlePos = document.getElementById("ProjectsTitle").getBoundingClientRect();
     let ProjectsPosition = projectsTitlePos.top + scrollChange - projectsTitlePos.height;
     window.scrollTo(0, ProjectsPosition);
-    console.log(projectsTitlePos);
-    console.log(ProjectsPosition);
+    // console.log(projectsTitlePos);
+    // console.log(ProjectsPosition);
 }
